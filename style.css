@@ -1,5 +1,8 @@
 .bgstar{ background-image: url("/Users/Emji/Desktop/CODING SCHOOL/Portfolio/img/stars.png");}
 .gradient {background-image: url("/Users/Emji/Desktop/CODING SCHOOL/Portfolio/img/gradient.png"); }
+
+.contient { width: 90%;
+                margin: 0 auto;}
 header { padding-top: 50px;
         flex: 0 0 auto;
         position: fixed;
@@ -23,13 +26,18 @@ header { padding-top: 50px;
 
 .menu { display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
         flex-wrap: nowrap;
         padding: 5px;
         margin: 5px;
         width: auto;
         }
 .liste { display: flex;
-        flex-direction: row-reverse;}
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;}
 
 .burger { display: flex;
         flex-direction: column;}
@@ -185,7 +193,7 @@ header { padding-top: 50px;
       	width: 300px;
       	height: 300px;
       	border:1px solid;
-      	overflow: hidden; /*Pour caché l'élément ".mask" qui contient la description de l'article */
+      	overflow: hidden; 
       	float: left;
           margin: 10px;
           background-color: white;
@@ -199,7 +207,6 @@ header { padding-top: 50px;
       	position: absolute;
       	left: 0;
       	top:300px;
-      /*Pour positionner l'élément ".mask" au dessous de l'article */
       	background: rgba(0, 0, 0, 0.932);
       	color:white;
       	text-align: center;
@@ -222,13 +229,22 @@ header { padding-top: 50px;
      .view:hover> .mask{
         top:0;
      }
-
+.poy { display: flex; flex-direction: row;}
      @media screen and (max-width: 840px) {
              .view{ width: 150px; height: 150px; margin: 25px 0;}
              .view img {width: 150px; height: 150px;}
              .mask { top: 150px ;width: 150px; height: 150px;}
              .mask h2 { font-size: 28px;}
              .mask p { font-size: 12px;}
+             .vertical { flex-direction: column;}
+             .horizontal {flex-direction: column;}
+             .horizontaldeux { flex-direction: column;}
+             .horizontalnowrap{ flex-direction: column;}
+             .horizontaltrois{ flex-direction: column;}
+             .NERD { flex-direction: column;}
+             .nerd2{ flex-direction: column;}
+             .animation{display: none;}
+             .poy { display: flex;flex-direction: column;}
      };
      
      .flexbox { display: flex;
@@ -262,3 +278,35 @@ header { padding-top: 50px;
                         padding: 10px;}
         .espace { margin-left: 10px;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+
+        .send { display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;}
+        
+        .mini { width: 70%; margin: 0 auto;}
+     
+        .bordertop { border-top: solid 2px darkgray; }
+
+
+        .horizontaldeux{ display: flex;flex-direction: row; flex-wrap: wrap;}
+
+        .horizontalnowrap{ display: flex;flex-direction: row; flex-wrap: nowrap; }
+
+        .horizontaltrois{ display: flex;flex-direction: row; flex-wrap: wrap;list-style: none;
+                text-decoration: none;}
+
+      
+
+        ul.horizontaltrois li {padding: 25px 25px;}
+
+        li{     text-decoration: none;
+                list-style: none;}
+        .sepdown { padding-bottom:150px;}
+
+        footer { background-color: rgb(27, 27, 27)}
+        .footpad{ padding:80px 0 30px;}
+
+        .white { color: white;}
+        
+        .flexend { display: flex; justify-content: flex-end;align-items: flex-end;}
