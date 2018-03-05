@@ -229,8 +229,24 @@ header { padding-top: 50px;
      .view:hover> .mask{
         top:0;
      }
-.poy { display: flex; flex-direction: row;}
-     @media screen and (max-width: 840px) {
+.poy { display: flex; flex-direction: row; align-items: center; padding: 15px;}
+
+.verticalform{          display:flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        flex:3;
+                        justify-content: center;
+                        align-items: center;
+        }
+
+.verticalformdeux{      display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        
+                        flex-wrap: wrap;
+                        flex:1;
+        }
+     @media screen and (max-width: 960px) {
              .view{ width: 150px; height: 150px; margin: 25px 0;}
              .view img {width: 150px; height: 150px;}
              .mask { top: 150px ;width: 150px; height: 150px;}
@@ -244,7 +260,18 @@ header { padding-top: 50px;
              .NERD { flex-direction: column;}
              .nerd2{ flex-direction: column;}
              .animation{display: none;}
-             .poy { display: flex;flex-direction: column;}
+             .poy { display: flex;flex-direction: column;
+                }
+                .menu { flex-direction: column; flex-wrap: wrap;}
+                .verticalformdeux { flex-direction: row; flex-wrap: wrap;}
+                .sousmenu { flex-direction: column; flex-wrap: wrap;}
+
+                .menu:hover { display: flex;
+                 flex-direction: column;
+                 flex-wrap: wrap; }
+
+                .menu:hover.sousmenu {display: flex;
+                        flex-direction: column;flex-wrap: wrap;}
      };
      
      .flexbox { display: flex;
